@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textSyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qu5"/>
+
+            <CheckBox
+                style="@style/radio"
+                android:id="@+id/qu5Larry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Larry Page"
+                android:onClick="onCheckboxClicked"/>
+
+            <CheckBox
+                style="@style/radio"
+                android:id="@+id/qu5Eduar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eduardo Saverin"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                style="@style/radio"
+                android:id="@+id/qu5Sergey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sergey Brin"
+                android:onClick="onCheckboxClicked"/>
+
+            <TextView
+                style="@style/textSyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qu6"/>
+
+            <EditText
+                android:id="@+id/qu6primeMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The Text here"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="@android:color/darker_gray"/>
+
+            <Button
+                style="@style/btnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conform"
+                android:onClick="btnprime"/>
+
+            <TextView
+                style="@style/textSyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qu1" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/qu1True"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu1Clicked"
+                    android:text="True" />
+
+                <RadioButton
+                    android:id="@+id/qu1Maybe"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu1Clicked"
+                    android:text="Maybe" />
+
+                <RadioButton
+                    android:id="@+id/qu1False"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu1Clicked"
+                    android:text="False" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/qu2"
+                style="@style/textSyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qu2" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qus">
+
+                <RadioButton
+                    android:id="@+id/qu2True"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu2Clicked"
+                    android:text="True" />
+
+                <RadioButton
+                    android:id="@+id/qu2Maybe"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu2Clicked"
+                    android:text="Maybe" />
+
+                <RadioButton
+                    android:id="@+id/qu2False"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu2Clicked"
+                    android:text="False" />
+
+            </RadioGroup>
+
+
+            <TextView
+                style="@style/textSyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qu3" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/qu3True"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu3Clicked"
+                    android:text="True" />
+
+                <RadioButton
+                    android:id="@+id/qu3Maybe"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu3Clicked"
+                    android:text="Maybe" />
+
+                <RadioButton
+                    android:id="@+id/qu3False"
+                    style="@style/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioqu3Clicked"
+                    android:text="False" />
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/textSyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qu4" />
+
+            <CheckBox
+                style="@style/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Windows OS"/>
+
+            <CheckBox
+                style="@style/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Both "/>
+
+            <CheckBox
+                style="@style/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mac OS"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiogroup"
+                android:layout_marginTop="70dp"
+                android:onClick="qu1"
+                android:text="Confrom"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

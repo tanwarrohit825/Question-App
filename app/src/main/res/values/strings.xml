@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <string name="qu1">MS Word is a hardware.</string>
+    false
+    <string name="qu2">CPU controls only input data of computer.</string>
+    false
+    <string name="qu3">Twitter is an online social networking and blogging service.</string>
+    false
+    <string name="qu4">Which one OS is the Best for you Windows or Mac</string>
+    true
+
+    <string name="qu5">who is the founder of google ?</string>
+
+    <string name="qu6">who is the prime minister of india</string>
+
+    <string-array name="questions_array">
+        <item>@string/qu1</item>
+        <item>@string/qu2</item>
+        <item>@string/qu3</item>
+        <item>@string/qu4</item>
+    </string-array>
+</resources>
