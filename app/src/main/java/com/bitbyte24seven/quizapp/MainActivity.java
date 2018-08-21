@@ -245,6 +245,7 @@ public class MainActivity extends AppCompatActivity {
         alert11.show();
     }
 
+    // when user is not compleate all Question showing Alert Message
     public void CompleteAllQuestion() {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
         builder1.setTitle(Html.fromHtml("<font color='#6eff27'>Complete All Question</font>"));
