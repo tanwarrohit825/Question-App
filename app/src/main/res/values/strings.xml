@@ -13,11 +13,23 @@
     <string name="qu5">who is the founder of google ?</string>
 
     <string name="qu6">who is the prime minister of india</string>
+    <string name="sergey_brin">Sergey Brin</string>
+    <string name="eduardo_saverin">Eduardo Saverin</string>
+    <string name="larry_page">Larry Page</string>
+    <string name="conform">Conform</string>
+    <string name="enter_the_text_here">Enter The Text here</string>
+    <string name="windows_os">Windows OS</string>
+    <string name="both">Both</string>
+    <string name="mac_os">Mac OS</string>
+    <string name="confrom">Confrom</string>
+    <string name="true1">True</string>
+    <string name="maybe">Maybe</string>
+    <string name="false1">False</string>
 
-    <string-array name="questions_array">
-        <item>@string/qu1</item>
-        <item>@string/qu2</item>
-        <item>@string/qu3</item>
-        <item>@string/qu4</item>
-    </string-array>
+    <!--<string-array name="questions_array">-->
+        <!--<item>@string/qu1</item>-->
+        <!--<item>@string/qu2</item>-->
+        <!--<item>@string/qu3</item>-->
+        <!--<item>@string/qu4</item>-->
+    <!--</string-array>-->
 </resources>

@@ -14,61 +14,65 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                style="@style/textSyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/qu5"/>
-
-            <CheckBox
-                style="@style/radio"
-                android:id="@+id/qu5Larry"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Larry Page"
-                android:onClick="onCheckboxClicked"/>
-
-            <CheckBox
-                style="@style/radio"
-                android:id="@+id/qu5Eduar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Eduardo Saverin"
-                android:onClick="onCheckboxClicked"/>
-            <CheckBox
-                style="@style/radio"
-                android:id="@+id/qu5Sergey"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sergey Brin"
-                android:onClick="onCheckboxClicked"/>
 
             <TextView
                 style="@style/textSyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/qu6"/>
+                android:text="@string/qu6" />
 
             <EditText
                 android:id="@+id/qu6primeMin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter The Text here"
-                android:layout_marginTop="16dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:textSize="24sp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"
                 android:gravity="center"
-                android:background="@android:color/darker_gray"/>
+                android:hint="@string/enter_the_text_here"
+                android:inputType="textCapWords|textCapSentences"
+                android:textSize="24sp" />
 
             <Button
                 style="@style/btnStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Conform"
-                android:onClick="btnprime"/>
+                android:onClick="btnprime"
+                android:text="@string/conform" />
+
+            <TextView
+                style="@style/textSyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qu5" />
+
+            <CheckBox
+                android:id="@+id/qu5Larry"
+                style="@style/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxqu5Clicked"
+                android:text="@string/larry_page" />
+
+            <CheckBox
+                android:id="@+id/qu5Eduar"
+                style="@style/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxqu5Clicked"
+                android:text="@string/eduardo_saverin" />
+
+            <CheckBox
+                android:id="@+id/qu5Sergey"
+                style="@style/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxqu5Clicked"
+                android:text="@string/sergey_brin" />
+
 
             <TextView
                 style="@style/textSyle"
@@ -84,26 +88,26 @@
                 <RadioButton
                     android:id="@+id/qu1True"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu1Clicked"
-                    android:text="True" />
+                    android:text="@string/true1" />
 
                 <RadioButton
                     android:id="@+id/qu1Maybe"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu1Clicked"
-                    android:text="Maybe" />
+                    android:text="@string/maybe" />
 
                 <RadioButton
                     android:id="@+id/qu1False"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu1Clicked"
-                    android:text="False" />
+                    android:text="@string/false1" />
 
             </RadioGroup>
 
@@ -117,31 +121,31 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/qus">
+                >
 
                 <RadioButton
                     android:id="@+id/qu2True"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu2Clicked"
-                    android:text="True" />
+                    android:text="@string/true1" />
 
                 <RadioButton
                     android:id="@+id/qu2Maybe"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu2Clicked"
-                    android:text="Maybe" />
+                    android:text="@string/maybe" />
 
                 <RadioButton
                     android:id="@+id/qu2False"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu2Clicked"
-                    android:text="False" />
+                    android:text="@string/false1" />
 
             </RadioGroup>
 
@@ -160,26 +164,26 @@
                 <RadioButton
                     android:id="@+id/qu3True"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu3Clicked"
-                    android:text="True" />
+                    android:text="@string/true1" />
 
                 <RadioButton
                     android:id="@+id/qu3Maybe"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu3Clicked"
-                    android:text="Maybe" />
+                    android:text="@string/maybe" />
 
                 <RadioButton
                     android:id="@+id/qu3False"
                     style="@style/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioqu3Clicked"
-                    android:text="False" />
+                    android:text="@string/false1" />
 
             </RadioGroup>
 
@@ -191,30 +195,35 @@
 
             <CheckBox
                 style="@style/radio"
-                android:layout_width="wrap_content"
+                android:id="@+id/qu4Windows"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Windows OS"/>
+                android:text="@string/windows_os"
+                android:onClick="onCheckboxqu4Clicked"/>
 
             <CheckBox
                 style="@style/radio"
-                android:layout_width="wrap_content"
+                android:id="@+id/qu4Both"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Both "/>
+                android:text="@string/both"
+                android:onClick="onCheckboxqu4Clicked"/>
 
             <CheckBox
                 style="@style/radio"
-                android:layout_width="wrap_content"
+                android:id="@+id/qu4MacOs"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mac OS"/>
+                android:text="@string/mac_os"
+                android:onClick="onCheckboxqu4Clicked"/>
 
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/radiogroup"
                 android:layout_marginTop="70dp"
-                android:onClick="qu1"
-                android:text="Confrom"
+                android:onClick="submitAllAns"
+                android:text="@string/confrom"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
